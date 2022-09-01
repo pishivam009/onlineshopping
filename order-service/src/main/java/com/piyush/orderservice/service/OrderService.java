@@ -16,7 +16,6 @@ import com.piyush.orderservice.model.Order;
 import com.piyush.orderservice.model.OrderLineItems;
 import com.piyush.orderservice.repository.OrderRepository;
 
-import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
@@ -25,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 public class OrderService {
 	
 	@Autowired
-	WebClient webClient;
+	WebClient.Builder webClientBuilder;
 	
 	@Autowired
 	OrderRepository orderRepository;
@@ -41,8 +40,8 @@ public class OrderService {
 		List<String> skucodes = order.getOrderLineItems().stream().map(orderLineItem -> orderLineItem.getSkuCode()).toList();
 		//Call inventory service and place order if is in stock
 		//format it in inventory?skucode=a&skucode=b type
-		InventoryResponse[] inventoryResposeArray = webClient.get()
-						.uri("http://localhost:8083/api/inventory", uriBuilder -> uriBuilder.queryParam("skuCode", skucodes).build())
+		InventoryResponse[] inventoryResposeArray = webClientBuilder.build().get()
+						.uri("http://inventory-service/api/inventory", uriBuilder -> uriBuilder.queryParam("skuCode", skucodes).build())
 						.retrieve().bodyToMono(InventoryResponse[].class)
 						.block();
 		//block() for synchronous
