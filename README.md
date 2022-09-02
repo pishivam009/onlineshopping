@@ -27,7 +27,7 @@
     
     create database ``inventory-service``;
 
-4. Swagger UI docuemntation can be found for order-service, inventory-service and product service can be found at localhost:<service-port>/swagger-ui/index.html
+4. Swagger UI docuemntation can be found for order-service, inventory-service and product service can be found at localhost:port/swagger-ui/index.html
 5. Currently centralized swagger is unavailable
 6. Apply them on localhost:8081
 
