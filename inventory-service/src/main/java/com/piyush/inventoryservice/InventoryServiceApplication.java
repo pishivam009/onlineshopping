@@ -5,12 +5,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import com.piyush.inventoryservice.model.Inventory;
 import com.piyush.inventoryservice.repository.InventoryRepository;
 
 @SpringBootApplication
 @EnableEurekaClient
+@EnableWebMvc
 public class InventoryServiceApplication {
 
 	public static void main(String[] args) {
