@@ -32,3 +32,5 @@
 6. Apply them on localhost:8081
 
     eg: localhost:8081/api/product , localhost:8081/api/inventory, localhost:8081/api/order
+
+7. Postman Requests : https://www.getpostman.com/collections/7f7caaf26a60da19f4e4
