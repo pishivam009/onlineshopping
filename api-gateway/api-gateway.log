@@ -1,0 +1,1088 @@
+2023-04-23 23:24:56.899  INFO 15172 --- [main] c.p.apigateway.ApiGatewayApplication     : Starting ApiGatewayApplication using Java 16.0.2 on PIYUSH-ACER with PID 15172 (C:\Users\Piyush\OneDrive\Documents\OnlineShopping\api-gateway\target\classes started by Piyush in C:\Users\Piyush\OneDrive\Documents\OnlineShopping\api-gateway)
+2023-04-23 23:24:56.903  INFO 15172 --- [main] c.p.apigateway.ApiGatewayApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-04-23 23:24:57.581 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayReactiveLoadBalancerClientAutoConfiguration#gatewayLoadBalancerClientFilter matched
+2023-04-23 23:24:57.584 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayReactiveLoadBalancerClientAutoConfiguration#loadBalancerServiceInstanceCookieFilter matched
+2023-04-23 23:24:57.595 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration$NettyConfiguration#routingFilter matched
+2023-04-23 23:24:57.596 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration$NettyConfiguration#nettyWriteResponseFilter matched
+2023-04-23 23:24:57.597 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration$NettyConfiguration#reactorNettyWebSocketClient matched
+2023-04-23 23:24:57.598 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration$NettyConfiguration#reactorNettyRequestUpgradeStrategy matched
+2023-04-23 23:24:57.656 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#adaptCachedBodyGlobalFilter matched
+2023-04-23 23:24:57.656 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#removeCachedBodyFilter matched
+2023-04-23 23:24:57.657 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#routeToRequestUrlFilter matched
+2023-04-23 23:24:57.657 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#forwardRoutingFilter matched
+2023-04-23 23:24:57.658 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#forwardPathFilter matched
+2023-04-23 23:24:57.658 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#webSocketService matched
+2023-04-23 23:24:57.658 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledGlobalFilter        : Condition OnEnabledGlobalFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#websocketRoutingFilter matched
+2023-04-23 23:24:57.659 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#weightCalculatorWebFilter matched
+2023-04-23 23:24:57.660 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#afterRoutePredicateFactory matched
+2023-04-23 23:24:57.660 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#beforeRoutePredicateFactory matched
+2023-04-23 23:24:57.660 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#betweenRoutePredicateFactory matched
+2023-04-23 23:24:57.661 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#cookieRoutePredicateFactory matched
+2023-04-23 23:24:57.661 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#headerRoutePredicateFactory matched
+2023-04-23 23:24:57.662 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#hostRoutePredicateFactory matched
+2023-04-23 23:24:57.662 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#methodRoutePredicateFactory matched
+2023-04-23 23:24:57.662 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#pathRoutePredicateFactory matched
+2023-04-23 23:24:57.662 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#queryRoutePredicateFactory matched
+2023-04-23 23:24:57.662 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#readBodyPredicateFactory matched
+2023-04-23 23:24:57.663 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#remoteAddrRoutePredicateFactory matched
+2023-04-23 23:24:57.664 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#xForwardedRemoteAddrRoutePredicateFactory matched
+2023-04-23 23:24:57.664 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#weightRoutePredicateFactory matched
+2023-04-23 23:24:57.665 TRACE 15172 --- [main] o.s.c.g.c.c.OnEnabledPredicate           : Condition OnEnabledPredicate on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#cloudFoundryRouteServiceRoutePredicateFactory matched
+2023-04-23 23:24:57.666 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#addRequestHeaderGatewayFilterFactory matched
+2023-04-23 23:24:57.666 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#mapRequestHeaderGatewayFilterFactory matched
+2023-04-23 23:24:57.667 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#addRequestParameterGatewayFilterFactory matched
+2023-04-23 23:24:57.667 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#addResponseHeaderGatewayFilterFactory matched
+2023-04-23 23:24:57.667 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#modifyRequestBodyGatewayFilterFactory matched
+2023-04-23 23:24:57.667 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#dedupeResponseHeaderGatewayFilterFactory matched
+2023-04-23 23:24:57.668 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#modifyResponseBodyGatewayFilterFactory matched
+2023-04-23 23:24:57.668 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#cacheRequestBodyGatewayFilterFactory matched
+2023-04-23 23:24:57.669 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#prefixPathGatewayFilterFactory matched
+2023-04-23 23:24:57.669 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#preserveHostHeaderGatewayFilterFactory matched
+2023-04-23 23:24:57.669 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#redirectToGatewayFilterFactory matched
+2023-04-23 23:24:57.670 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#removeRequestHeaderGatewayFilterFactory matched
+2023-04-23 23:24:57.670 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#removeRequestParameterGatewayFilterFactory matched
+2023-04-23 23:24:57.670 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#removeResponseHeaderGatewayFilterFactory matched
+2023-04-23 23:24:57.678 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#rewritePathGatewayFilterFactory matched
+2023-04-23 23:24:57.678 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#retryGatewayFilterFactory matched
+2023-04-23 23:24:57.679 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#setPathGatewayFilterFactory matched
+2023-04-23 23:24:57.679 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#secureHeadersGatewayFilterFactory matched
+2023-04-23 23:24:57.680 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#setRequestHeaderGatewayFilterFactory matched
+2023-04-23 23:24:57.680 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#setRequestHostHeaderGatewayFilterFactory matched
+2023-04-23 23:24:57.681 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#setResponseHeaderGatewayFilterFactory matched
+2023-04-23 23:24:57.681 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#rewriteResponseHeaderGatewayFilterFactory matched
+2023-04-23 23:24:57.681 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#rewriteLocationResponseHeaderGatewayFilterFactory matched
+2023-04-23 23:24:57.681 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#setStatusGatewayFilterFactory matched
+2023-04-23 23:24:57.682 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#saveSessionGatewayFilterFactory matched
+2023-04-23 23:24:57.682 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#stripPrefixGatewayFilterFactory matched
+2023-04-23 23:24:57.682 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#requestHeaderToRequestUriGatewayFilterFactory matched
+2023-04-23 23:24:57.683 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#requestSizeGatewayFilterFactory matched
+2023-04-23 23:24:57.683 TRACE 15172 --- [main] o.s.c.g.c.conditional.OnEnabledFilter    : Condition OnEnabledFilter on org.springframework.cloud.gateway.config.GatewayAutoConfiguration#requestHeaderSizeGatewayFilterFactory matched
+2023-04-23 23:24:57.953  INFO 15172 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c24a87a6-3d36-39e6-85fb-7b303be88d49
+2023-04-23 23:24:58.027  INFO 15172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-23 23:24:58.029  INFO 15172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-23 23:24:58.030  INFO 15172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-23 23:24:58.865 DEBUG 15172 --- [main] o.s.c.gateway.config.GatewayProperties   : Routes supplied from Gateway Properties: [RouteDefinition{id='product-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/product}}], filters=[], uri=lb://product-service, order=0, metadata={}}, RouteDefinition{id='order-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/order}}], filters=[], uri=lb://order-service, order=0, metadata={}}, RouteDefinition{id='inventory-service', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/api/inventory}}], filters=[], uri=lb://inventory-service, order=0, metadata={}}, RouteDefinition{id='discovery-server', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/eureka/web}}], filters=[FilterDefinition{name='SetPath', args={_genkey_0=/}}], uri=http://localhost:8761, order=0, metadata={}}, RouteDefinition{id='discovery-server-static', predicates=[PredicateDefinition{name='Path', args={_genkey_0=/eureka/**}}], filters=[], uri=http://localhost:8761, order=0, metadata={}}]
+2023-04-23 23:24:59.065  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2023-04-23 23:24:59.065  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2023-04-23 23:24:59.065  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2023-04-23 23:24:59.065  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2023-04-23 23:24:59.065  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2023-04-23 23:24:59.065  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2023-04-23 23:24:59.065  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2023-04-23 23:24:59.065  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2023-04-23 23:24:59.066  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2023-04-23 23:24:59.066  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2023-04-23 23:24:59.066  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2023-04-23 23:24:59.066  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-04-23 23:24:59.066  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2023-04-23 23:24:59.066  INFO 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-04-23 23:24:59.362  INFO 15172 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-04-23 23:24:59.728  WARN 15172 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-23 23:24:59.804  INFO 15172 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-04-23 23:24:59.865  INFO 15172 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-04-23 23:24:59.874  INFO 15172 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-23 23:24:59.905  INFO 15172 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2023-04-23 23:24:59.905  INFO 15172 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2023-04-23 23:24:59.905  INFO 15172 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2023-04-23 23:24:59.905  INFO 15172 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2023-04-23 23:24:59.905  INFO 15172 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2023-04-23 23:24:59.905  INFO 15172 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2023-04-23 23:24:59.905  INFO 15172 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2023-04-23 23:25:00.388  INFO 15172 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2023-04-23 23:25:00.395  INFO 15172 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-04-23 23:25:00.402  INFO 15172 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-23 23:25:00.418  INFO 15172 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1682272500417 with initial instances count: 3
+2023-04-23 23:25:00.419  INFO 15172 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2023-04-23 23:25:00.420  INFO 15172 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1682272500420, current=UP, previous=STARTING]
+2023-04-23 23:25:00.422  INFO 15172 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/api-gateway:28d5660c-07e4-4ae7-8f69-7f76559f8253: registering service...
+2023-04-23 23:25:00.446 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:25:00.495  INFO 15172 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/api-gateway:28d5660c-07e4-4ae7-8f69-7f76559f8253 - registration status: 204
+2023-04-23 23:25:00.498 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:25:00.498 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:25:00.499 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:25:00.500 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:25:00.500 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:25:00.501 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:25:00.501 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:25:00.513 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:25:00.514 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:25:00.515 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:25:00.719  INFO 15172 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2023-04-23 23:25:00.720  INFO 15172 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2023-04-23 23:25:00.993 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:25:00.994 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:25:00.995 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:25:00.995 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:25:00.996 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:25:00.996 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:25:00.996 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:25:00.997 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:25:00.998 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:25:00.998 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:25:00.999 DEBUG 15172 --- [main] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:25:01.007  INFO 15172 --- [main] c.p.apigateway.ApiGatewayApplication     : Started ApiGatewayApplication in 4.839 seconds (JVM running for 5.83)
+2023-04-23 23:25:30.439 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:25:30.444 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:25:30.445 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:25:30.449 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:25:30.450 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:25:30.453 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:25:30.454 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:25:30.457 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:25:30.467 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:25:30.468 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:25:30.473 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:26:00.517 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:26:00.523 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:26:00.524 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:26:00.528 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:26:00.528 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:26:00.531 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:26:00.532 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:26:00.534 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:26:00.536 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:26:00.536 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:26:00.539 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:26:30.559 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:26:30.561 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:26:30.562 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:26:30.563 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:26:30.564 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:26:30.565 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:26:30.565 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:26:30.567 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:26:30.568 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:26:30.568 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:26:30.570 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:27:00.657 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:27:00.660 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:27:00.660 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:27:00.661 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:27:00.662 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:27:00.663 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:27:00.663 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:27:00.663 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:27:00.664 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:27:00.664 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:27:00.665 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:27:30.695 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:27:30.699 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:27:30.700 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:27:30.702 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:27:30.703 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:27:30.705 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:27:30.706 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:27:30.709 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:27:30.711 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:27:30.712 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:27:30.715 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:28:00.738 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:28:00.740 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:28:00.741 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:28:00.742 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:28:00.742 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:28:00.743 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:28:00.743 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:28:00.744 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:28:00.745 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:28:00.745 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:28:00.746 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:28:30.767 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:28:30.771 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:28:30.772 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:28:30.776 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:28:30.776 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:28:30.778 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:28:30.778 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:28:30.780 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:28:30.782 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:28:30.783 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:28:30.785 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:29:00.805 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:29:00.807 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:29:00.808 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:29:00.810 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:29:00.810 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:29:00.812 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:29:00.812 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:29:00.813 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:29:00.815 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:29:00.816 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:29:00.817 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:29:30.833 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:29:30.835 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:29:30.836 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:29:30.837 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:29:30.837 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:29:30.840 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:29:30.840 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:29:30.841 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:29:30.842 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:29:30.842 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:29:30.844 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:29:59.939  INFO 15172 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-23 23:30:00.870 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:30:00.874 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:30:00.875 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:30:00.877 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:30:00.879 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:30:00.881 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:30:00.882 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:30:00.885 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:30:00.886 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:30:00.887 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:30:00.890 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:30:30.928 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:30:30.932 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:30:30.933 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:30:30.936 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:30:30.937 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:30:30.939 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:30:30.940 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:30:30.944 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:30:30.946 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:30:30.947 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:30:30.950 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:31:00.978 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:31:00.984 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:31:00.984 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:31:00.987 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:31:00.987 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:31:00.990 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:31:00.990 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:31:00.993 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:31:00.995 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:31:00.996 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:31:00.999 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:31:31.027 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:31:31.033 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:31:31.033 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:31:31.037 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:31:31.038 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:31:31.040 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:31:31.042 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:31:31.044 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:31:31.048 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:31:31.049 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:31:31.053 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:32:01.076 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:32:01.080 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:32:01.082 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:32:01.084 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:32:01.085 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:32:01.088 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:32:01.088 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:32:01.090 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:32:01.103 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:32:01.104 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:32:01.107 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:32:31.115 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:32:31.116 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:32:31.116 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:32:31.117 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:32:31.117 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:32:31.118 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:32:31.118 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:32:31.119 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:32:31.120 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:32:31.120 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:32:31.121 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:32:59.474 TRACE 15172 --- [reactor-http-nio-3] o.s.c.g.f.WeightCalculatorWebFilter      : Weights attr: {}
+2023-04-23 23:32:59.502 TRACE 15172 --- [reactor-http-nio-3] o.s.c.g.h.p.PathRoutePredicateFactory    : Pattern "/api/product" matches against value "/api/product"
+2023-04-23 23:32:59.503 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.h.RoutePredicateHandlerMapping   : Route matched: product-service
+2023-04-23 23:32:59.505 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.h.RoutePredicateHandlerMapping   : Mapping [Exchange: GET http://localhost:8081/api/product] to Route{id='product-service', uri=lb://product-service, order=0, predicate=Paths: [/api/product], match trailing slash: true, gatewayFilters=[], metadata={}}
+2023-04-23 23:32:59.506 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.h.RoutePredicateHandlerMapping   : [090c8e23-1] Mapped to org.springframework.cloud.gateway.handler.FilteringWebHandler@4e47f67f
+2023-04-23 23:32:59.507 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.handler.FilteringWebHandler      : Sorted gatewayFilterFactories: [[GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RemoveCachedBodyFilter@65c5bf0e}, order = -2147483648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter@5ba90d8a}, order = -2147482648], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyWriteResponseFilter@52ca2652}, order = -1], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardPathFilter@5efeb117}, order = 0], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.RouteToRequestUrlFilter@697d6ded}, order = 10000], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ReactiveLoadBalancerClientFilter@3d615b2e}, order = 10150], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.LoadBalancerServiceInstanceCookieFilter@3a1f2a1}, order = 10151], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.WebsocketRoutingFilter@160b4809}, order = 2147483646], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.NettyRoutingFilter@40ce9049}, order = 2147483647], [GatewayFilterAdapter{delegate=org.springframework.cloud.gateway.filter.ForwardRoutingFilter@5d05f453}, order = 2147483647]]
+2023-04-23 23:32:59.515 TRACE 15172 --- [reactor-http-nio-3] o.s.c.g.filter.RouteToRequestUrlFilter   : RouteToRequestUrlFilter start
+2023-04-23 23:32:59.518 TRACE 15172 --- [reactor-http-nio-3] s.c.g.f.ReactiveLoadBalancerClientFilter : ReactiveLoadBalancerClientFilter url before: lb://product-service/api/product
+2023-04-23 23:32:59.693 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:32:59.694 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:32:59.694 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:32:59.695 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:32:59.695 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:32:59.696 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:32:59.696 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:32:59.698 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:32:59.698 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:32:59.698 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:32:59.702 DEBUG 15172 --- [reactor-http-nio-3] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:32:59.742 TRACE 15172 --- [reactor-http-nio-3] s.c.g.f.ReactiveLoadBalancerClientFilter : LoadBalancerClientFilter url chosen: http://localhost:65237/api/product
+2023-04-23 23:32:59.984 TRACE 15172 --- [reactor-http-nio-3] o.s.c.gateway.filter.NettyRoutingFilter  : outbound route: f4fff2fd, inbound: [090c8e23-1] 
+2023-04-23 23:33:00.671 TRACE 15172 --- [reactor-http-nio-3] o.s.c.g.filter.NettyWriteResponseFilter  : NettyWriteResponseFilter start inbound: f4fff2fd, outbound: [090c8e23-1] 
+2023-04-23 23:33:01.143 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:33:01.144 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:33:01.144 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:33:01.145 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:33:01.145 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:33:01.146 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:33:01.146 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:33:01.147 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:33:01.148 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:33:01.148 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:33:01.149 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:33:31.160 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:33:31.162 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:33:31.163 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:33:31.164 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:33:31.164 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:33:31.165 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:33:31.165 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:33:31.166 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:33:31.167 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:33:31.168 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:33:31.169 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:34:01.185 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:34:01.186 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:34:01.186 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:34:01.187 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:34:01.187 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:34:01.188 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:34:01.188 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:34:01.188 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:34:01.188 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:34:01.188 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:34:01.189 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:34:31.199 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:34:31.202 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:34:31.202 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:34:31.204 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:34:31.204 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:34:31.205 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:34:31.205 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:34:31.206 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:34:31.207 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:34:31.207 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:34:31.209 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:34:59.967  INFO 15172 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-23 23:35:01.223 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:35:01.224 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:35:01.225 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:35:01.225 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:35:01.225 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:35:01.225 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:35:01.226 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:35:01.226 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:35:01.226 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:35:01.226 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:35:01.227 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:35:31.234 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:35:31.236 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:35:31.236 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:35:31.236 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:35:31.236 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:35:31.237 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:35:31.237 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:35:31.237 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:35:31.238 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:35:31.238 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:35:31.238 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:36:01.254 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:36:01.256 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:36:01.257 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:36:01.258 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:36:01.259 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:36:01.260 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:36:01.261 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:36:01.262 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:36:01.263 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:36:01.263 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:36:01.265 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:36:31.274 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:36:31.276 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:36:31.276 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:36:31.278 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:36:31.278 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:36:31.279 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:36:31.279 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:36:31.281 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:36:31.281 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:36:31.281 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:36:31.282 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:37:01.289 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:37:01.291 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:37:01.291 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:37:01.291 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:37:01.292 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:37:01.293 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:37:01.293 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:37:01.295 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:37:01.296 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:37:01.296 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:37:01.297 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:37:31.308 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:37:31.310 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:37:31.310 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:37:31.310 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:37:31.310 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:37:31.311 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:37:31.311 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:37:31.312 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:37:31.313 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:37:31.313 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:37:31.313 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:38:01.333 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:38:01.334 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:38:01.335 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:38:01.335 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:38:01.335 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:38:01.352 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:38:01.352 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:38:01.353 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:38:01.354 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:38:01.354 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:38:01.355 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:38:31.542 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:38:31.543 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:38:31.543 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:38:31.544 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:38:31.544 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:38:31.544 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:38:31.544 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:38:31.545 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:38:31.545 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:38:31.545 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:38:31.545 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:39:01.551 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:39:01.552 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:39:01.552 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:39:01.553 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:39:01.553 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:39:01.554 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:39:01.554 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:39:01.554 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:39:01.555 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:39:01.555 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:39:01.555 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:39:31.564 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:39:31.565 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:39:31.566 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:39:31.566 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:39:31.566 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:39:31.567 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:39:31.567 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:39:31.568 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:39:31.568 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:39:31.568 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:39:31.569 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:39:59.973  INFO 15172 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-23 23:40:01.582 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:40:01.586 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:40:01.586 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:40:01.587 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:40:01.587 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:40:01.588 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:40:01.588 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:40:01.589 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:40:01.591 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:40:01.591 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:40:01.592 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:40:31.600 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:40:31.602 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:40:31.602 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:40:31.603 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:40:31.603 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:40:31.604 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:40:31.604 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:40:31.605 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:40:31.605 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:40:31.605 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:40:31.606 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:41:01.625 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:41:01.627 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:41:01.627 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:41:01.628 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:41:01.628 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:41:01.629 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:41:01.629 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:41:01.630 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:41:01.630 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:41:01.630 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:41:01.632 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:41:31.645 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:41:31.647 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:41:31.648 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:41:31.649 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:41:31.650 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:41:31.651 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:41:31.651 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:41:31.652 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:41:31.653 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:41:31.653 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:41:31.654 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:42:01.671 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:42:01.673 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:42:01.673 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:42:01.673 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:42:01.674 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:42:01.675 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:42:01.675 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:42:01.676 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:42:01.677 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:42:01.677 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:42:01.678 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:42:31.688 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:42:31.690 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:42:31.690 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:42:31.692 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:42:31.692 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:42:31.692 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:42:31.696 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:42:31.698 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:42:31.698 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:42:31.698 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:42:31.699 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:43:01.706 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:43:01.708 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:43:01.708 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:43:01.709 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:43:01.710 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:43:01.711 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:43:01.711 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:43:01.712 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:43:01.713 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:43:01.713 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:43:01.715 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:43:31.729 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:43:31.733 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:43:31.733 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:43:31.734 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:43:31.735 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:43:31.736 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:43:31.736 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:43:31.738 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:43:31.740 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:43:31.741 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:43:31.743 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:44:01.765 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:44:01.768 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:44:01.768 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:44:01.769 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:44:01.769 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:44:01.771 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:44:01.772 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:44:01.772 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:44:01.773 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:44:01.773 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:44:01.775 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:44:31.786 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:44:31.787 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:44:31.787 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:44:31.788 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:44:31.788 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:44:31.789 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:44:31.790 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:44:31.790 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:44:31.791 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:44:31.791 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:44:31.793 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:44:59.984  INFO 15172 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-23 23:45:01.809 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:45:01.811 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:45:01.811 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:45:01.812 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:45:01.812 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:45:01.815 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:45:01.816 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:45:01.817 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:45:01.818 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:45:01.818 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:45:01.819 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:45:31.835 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:45:31.897 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:45:31.898 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:45:31.988 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:45:31.988 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:45:31.988 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:45:31.988 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:45:32.040 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:45:32.040 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:45:32.040 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:45:32.064 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:46:02.083 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:46:02.087 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:46:02.088 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:46:02.089 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:46:02.090 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:46:02.091 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:46:02.091 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:46:02.092 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:46:02.095 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:46:02.095 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:46:02.097 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:46:32.122 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:46:32.123 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:46:32.123 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:46:32.124 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:46:32.124 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:46:32.144 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:46:32.144 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:46:32.147 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:46:32.148 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:46:32.148 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:46:32.191 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:47:02.197 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:47:02.198 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:47:02.198 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:47:02.199 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:47:02.199 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:47:02.200 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:47:02.200 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:47:02.201 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:47:02.202 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:47:02.202 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:47:02.203 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:47:32.208 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:47:32.209 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:47:32.210 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:47:32.210 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:47:32.211 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:47:32.211 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:47:32.211 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:47:32.212 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:47:32.213 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:47:32.213 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:47:32.214 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:48:02.232 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:48:02.233 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:48:02.233 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:48:02.234 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:48:02.234 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:48:02.235 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:48:02.235 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:48:02.236 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:48:02.237 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:48:02.237 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:48:02.239 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:48:32.255 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:48:32.257 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:48:32.257 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:48:32.258 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:48:32.258 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:48:32.259 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:48:32.259 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:48:32.259 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:48:32.260 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:48:32.260 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:48:32.262 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:49:02.280 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:49:02.282 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:49:02.282 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:49:02.283 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:49:02.284 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:49:02.284 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:49:02.285 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:49:02.287 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:49:02.287 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:49:02.288 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:49:02.289 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:49:32.308 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:49:32.354 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:49:32.354 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:49:32.355 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:49:32.355 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:49:32.355 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:49:32.355 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:49:32.356 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:49:32.380 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:49:32.380 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:49:32.381 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:49:59.988  INFO 15172 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-04-23 23:50:02.445 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:50:02.446 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:50:02.446 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:50:02.467 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:50:02.467 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:50:02.468 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:50:02.468 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:50:02.468 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:50:02.469 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:50:02.469 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:50:02.499 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:50:32.506 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:50:32.508 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:50:32.508 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:50:32.513 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:50:32.514 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:50:32.517 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:50:32.517 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:50:32.518 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:50:32.520 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:50:32.520 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:50:32.521 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:51:02.590 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:51:02.614 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:51:02.615 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:51:02.615 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:51:02.615 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:51:02.615 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:51:02.615 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:51:02.615 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:51:02.617 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:51:02.617 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:51:02.650 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:51:32.701 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:51:32.702 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:51:32.702 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:51:32.702 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:51:32.702 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:51:32.702 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:51:32.703 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:51:32.703 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:51:32.703 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:51:32.703 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:51:32.773 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:52:02.788 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:52:02.790 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:52:02.790 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:52:02.791 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:52:02.791 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:52:02.793 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:52:02.793 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:52:02.795 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:52:02.797 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:52:02.798 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:52:02.798 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:52:32.812 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:52:32.813 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:52:32.813 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:52:32.813 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:52:32.814 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:52:32.814 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:52:32.814 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:52:32.814 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:52:32.815 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:52:32.815 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:52:32.815 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:53:02.823 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition product-service applying {_genkey_0=/api/product} to Path
+2023-04-23 23:53:02.824 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: product-service
+2023-04-23 23:53:02.824 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition order-service applying {_genkey_0=/api/order} to Path
+2023-04-23 23:53:02.826 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: order-service
+2023-04-23 23:53:02.826 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition inventory-service applying {_genkey_0=/api/inventory} to Path
+2023-04-23 23:53:02.826 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: inventory-service
+2023-04-23 23:53:02.826 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying {_genkey_0=/eureka/web} to Path
+2023-04-23 23:53:02.827 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server applying filter {_genkey_0=/} to SetPath
+2023-04-23 23:53:02.827 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server
+2023-04-23 23:53:02.827 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition discovery-server-static applying {_genkey_0=/eureka/**} to Path
+2023-04-23 23:53:02.827 DEBUG 15172 --- [DiscoveryClient-CacheRefreshExecutor-0] o.s.c.g.r.RouteDefinitionRouteLocator    : RouteDefinition matched: discovery-server-static
+2023-04-23 23:53:19.545  INFO 15172 --- [RMI TCP Connection(37)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-04-23 23:53:19.571  INFO 15172 --- [RMI TCP Connection(37)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application API-GATEWAY with eureka with status DOWN
+2023-04-23 23:53:19.571  INFO 15172 --- [RMI TCP Connection(37)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1682274199571, current=DOWN, previous=UP]
+2023-04-23 23:53:19.572  INFO 15172 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/api-gateway:28d5660c-07e4-4ae7-8f69-7f76559f8253: registering service...
+2023-04-23 23:53:19.653  INFO 15172 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/} exception=I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 21 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:565)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:645)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 34 more
+
+2023-04-23 23:53:19.653  WARN 15172 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2023-04-23 23:53:19.678  INFO 15172 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:565)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:645)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2023-04-23 23:53:19.678  WARN 15172 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:8761/eureka/apps/API-GATEWAY": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2023-04-23 23:53:19.692  WARN 15172 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/api-gateway:28d5660c-07e4-4ae7-8f69-7f76559f8253 - registration failed Cannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2023-04-23 23:53:19.693  WARN 15172 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2023-04-23 23:53:21.710  INFO 15172 --- [RMI TCP Connection(37)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-04-23 23:53:24.736  INFO 15172 --- [RMI TCP Connection(37)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2023-04-23 23:53:24.748  INFO 15172 --- [RMI TCP Connection(37)-127.0.0.1] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/api-gateway:28d5660c-07e4-4ae7-8f69-7f76559f8253": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/api-gateway:28d5660c-07e4-4ae7-8f69-7f76559f8253": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:147)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71)
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 75 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:576)
+	at java.base/sun.nio.ch.Net.connect(Net.java:565)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:645)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 88 more
+
+2023-04-23 23:53:24.749  WARN 15172 --- [RMI TCP Connection(37)-127.0.0.1] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:8761/eureka/apps/API-GATEWAY/api-gateway:28d5660c-07e4-4ae7-8f69-7f76559f8253": Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:8761 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+2023-04-23 23:53:24.751 ERROR 15172 --- [RMI TCP Connection(37)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/api-gateway:28d5660c-07e4-4ae7-8f69-7f76559f8253 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390) ~[spring-cloud-context-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-3.1.3.jar:3.1.3]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:147) ~[spring-boot-2.6.11.jar:2.6.11]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-2.6.11.jar:2.6.11]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[na:na]
+	at jdk.internal.reflect.GeneratedMethodAccessor49.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:260) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1399) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827) ~[na:na]
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor51.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+
+2023-04-23 23:53:24.803  INFO 15172 --- [RMI TCP Connection(37)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

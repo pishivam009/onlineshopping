@@ -1,0 +1,31 @@
+2023-04-24 00:14:43.880  INFO 20080 --- [main] c.p.d.DiscoveryServerApplicationTests    : Starting DiscoveryServerApplicationTests using Java 17.0.4 on PIYUSH-ACER with PID 20080 (started by Piyush in C:\Users\Piyush\OneDrive\Documents\OnlineShopping\discovery-server)
+2023-04-24 00:14:43.888  INFO 20080 --- [main] c.p.d.DiscoveryServerApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-04-24 00:14:45.050  INFO 20080 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=56d26f1a-f828-3079-a7f3-f770eccea03c
+2023-04-24 00:14:46.932  INFO 20080 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2023-04-24 00:14:47.099  WARN 20080 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-24 00:14:47.328  INFO 20080 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-04-24 00:14:47.363  INFO 20080 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-04-24 00:14:47.364  INFO 20080 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2023-04-24 00:14:47.380  INFO 20080 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1682275487378 with initial instances count: 0
+2023-04-24 00:14:47.454  INFO 20080 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2023-04-24 00:14:47.456  WARN 20080 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2023-04-24 00:14:47.524  INFO 20080 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2023-04-24 00:14:47.525  INFO 20080 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2023-04-24 00:14:47.693  INFO 20080 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-24 00:14:47.762  INFO 20080 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
+2023-04-24 00:14:47.778  INFO 20080 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2023-04-24 00:14:47.779  INFO 20080 --- [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2023-04-24 00:14:47.780  INFO 20080 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2023-04-24 00:14:47.780  INFO 20080 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2023-04-24 00:14:47.780  INFO 20080 --- [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2023-04-24 00:14:47.792  INFO 20080 --- [main] c.p.d.DiscoveryServerApplicationTests    : Started DiscoveryServerApplicationTests in 4.346 seconds (JVM running for 5.411)
+2023-04-24 00:14:47.795  INFO 20080 --- [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2023-04-24 00:14:48.352  INFO 20080 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application UNKNOWN with eureka with status DOWN
+2023-04-24 00:14:48.353  INFO 20080 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Shutting down Eureka Server..
+2023-04-24 00:14:48.362  INFO 20080 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-04-24 00:14:48.384  INFO 20080 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-04-24 00:14:48.385  INFO 20080 --- [SpringApplicationShutdownHook] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka Service is now shutdown...
+2023-04-24 00:14:48.386  INFO 20080 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shutting down ...
+2023-04-24 00:14:48.394  INFO 20080 --- [SpringApplicationShutdownHook] c.n.eureka.DefaultEurekaServerContext    : Shut down
+2023-04-24 00:14:48.402  INFO 20080 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2023-04-24 00:14:48.404  INFO 20080 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
